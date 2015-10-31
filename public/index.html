@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		h1{
+			font-family: "Georgia";
+			color:orange
+		}
+		#d{
+		    float: right;
+		    margin-right: 25em;
+		    margin-top: 25em; 
+		}
+		#pic{
+			margin-left: 8em;
+			margin-top: 25px
+		}
+	</style>
+	<script type="text/javascript">
+		var show=function(){
+			document.getElementById("waterPot").hidden=false;
+		} 
+		var hide=function(){
+			document.getElementById("waterPot").hidden=true;
+			setInterval(show,1000)
+		}
+	</script>
+	<title>Flower Catalog</title>
+</head>
+<body>
+	
+	<h1 align="center">Flower Catalog</h1>
+	<hr/>
+	<img src="image/flowers.jpg" style="width:900px" id ="pic"></img>
+	<ul id="d">
+		<li><a href="Abeliophyllum.html">Abeliophyllum</a></li>
+		<li><a href="Ageratum.html">Ageratum</a></li>
+		<img src="image/animated-flower-image-0021.gif" id="waterPot" onclick="hide()">
+		<a href="guestbook.html">Guest book</a>
+	</ul>
+
+</body>
+</html>
